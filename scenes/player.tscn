@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dd4wxlwhriywo"]
+
+[ext_resource type="Script" uid="uid://cceq6hejhntt6" path="res://character_body_2d.gd" id="1_3vyb7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g2els"]
+
+[node name="Player" type="CharacterBody2D" unique_id=549145980 groups=["Player"]]
+script = ExtResource("1_3vyb7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1981793488 groups=["Player"]]
+shape = SubResource("RectangleShape2D_g2els")

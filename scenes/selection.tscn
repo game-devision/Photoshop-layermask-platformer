@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://5b4f4hmpdyrc"]
+
+[ext_resource type="Script" uid="uid://8pl1lhulnnf0" path="res://selection.gd" id="1_jqogx"]
+[ext_resource type="Script" uid="uid://b1dks1y48i0wo" path="res://scripts/SelectDetector.gd" id="2_pnwr1"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_jqogx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jqogx"]
+size = Vector2(40, 40)
+
+[node name="Selection" type="Node2D" unique_id=432554606]
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=806437863]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = SubResource("ViewportTexture_jqogx")
+script = ExtResource("1_jqogx")
+
+[node name="Node2D" type="Node2D" parent="NinePatchRect" unique_id=1063572319]
+
+[node name="pivot sprite" type="Sprite2D" parent="NinePatchRect" unique_id=358770834]
+
+[node name="Area2D" type="Area2D" parent="NinePatchRect/pivot sprite" unique_id=560553466]
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("2_pnwr1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NinePatchRect/pivot sprite/Area2D" unique_id=915163502]
+position = Vector2(20, 20)
+skew = -0.0034906585
+shape = SubResource("RectangleShape2D_jqogx")
+
+[connection signal="area_entered" from="NinePatchRect/pivot sprite/Area2D" to="NinePatchRect/pivot sprite/Area2D" method="_on_area_entered"]
+[connection signal="body_entered" from="NinePatchRect/pivot sprite/Area2D" to="NinePatchRect/pivot sprite/Area2D" method="_on_body_entered"]
+[connection signal="body_exited" from="NinePatchRect/pivot sprite/Area2D" to="NinePatchRect/pivot sprite/Area2D" method="_on_body_exited"]
