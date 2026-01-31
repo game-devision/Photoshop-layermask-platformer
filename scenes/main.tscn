@@ -1,8 +1,21 @@
 [gd_scene format=4 uid="uid://ciwgrtu2r4x5t"]
 
 [ext_resource type="PackedScene" uid="uid://dd4wxlwhriywo" path="res://scenes/player.tscn" id="1_o5qli"]
-[ext_resource type="Texture2D" uid="uid://cc74itr44ho10" path="res://icon.svg" id="2_0wfyh"]
+[ext_resource type="Texture2D" uid="uid://sx5cmk011aro" path="res://icon.svg" id="2_0wfyh"]
+[ext_resource type="Shader" uid="uid://cgvoq2ta4sd1a" path="res://shaders/select hide.gdshader" id="2_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://5b4f4hmpdyrc" path="res://scenes/selection.tscn" id="3_sugp2"]
+[ext_resource type="PackedScene" uid="uid://cjn6al8d0i8bj" path="res://scenes/selection_controller.tscn" id="5_tbgi4"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tbgi4"]
+shader = ExtResource("2_jyhfs")
+shader_parameter/fill_amount = 0.5
+shader_parameter/mask_rotation = 0.0
+shader_parameter/mask_offset = Vector2(0, 0)
+shader_parameter/mask_size = Vector2(1, 1)
+shader_parameter/mask_rotation_pivot = Vector2(0.5, 0.5)
+shader_parameter/mask_scale_pivot = Vector2(0.5, 0.5)
+shader_parameter/invert_mask = false
+shader_parameter/use_different_texture = false
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sugp2"]
 texture = ExtResource("2_0wfyh")
@@ -191,6 +204,7 @@ sources/0 = SubResource("TileSetAtlasSource_jyhfs")
 position = Vector2(-66, 60)
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1483716126 groups=["MainCam"]]
+material = SubResource("ShaderMaterial_tbgi4")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1831958331]
 position = Vector2(1, 0)
@@ -199,8 +213,13 @@ tile_set = SubResource("TileSet_jyhfs")
 
 [node name="Selection" parent="." unique_id=432554606 instance=ExtResource("3_sugp2")]
 z_index = -2
-position = Vector2(2, 0)
+offset_left = 2.0
+offset_right = 42.0
 
 [node name="TileMapLayer2" type="TileMapLayer" parent="." unique_id=598075439]
 tile_map_data = PackedByteArray("AAAKAAcAAAAEAAIAAAALAAcAAAAEAAIAAAAMAAcAAAAEAAIAAAANAAcAAAAEAAIAAAAOAAcAAAAEAAIAAAAPAAcAAAAEAAIAAAAQAAcAAAAEAAIAAAARAAwAAAAEAAIAAAASAAwAAAAEAAIAAAATAAwAAAAEAAIAAAAUAAwAAAAEAAIAAAAVAAwAAAAEAAIAAAAWAAwAAAAEAAIAAAAXAAwAAAAEAAIAAAAYAAwAAAAEAAIAAAA=")
 tile_set = SubResource("TileSet_tbgi4")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1247115051]
+
+[node name="Selection controller" parent="." unique_id=1605957353 instance=ExtResource("5_tbgi4")]

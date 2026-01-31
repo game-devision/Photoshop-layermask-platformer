@@ -17,19 +17,21 @@ func _input(event):
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT:
 			if event.pressed:
-				# Start selection
-				is_selecting = true
-				selection_start = get_global_mouse_position()
-				nine_patch_rect.position = selection_start
-				nine_patch_rect.size = Vector2()
-				
-				
+				return
+			#	# Start selection
+			#	is_selecting = true
+			#	selection_start = get_global_mouse_position()
+			#	nine_patch_rect.position = selection_start
+			#	nine_patch_rect.size = Vector2()
+			#	
+			#	
 			else:
-				# End selection
+			#	# End selection
 				if is_selecting:
 					is_selecting = false
 					#nine_patch_rect.visible = false
-					print("Select space here")
+			#
+			print("Select space here")
 
 		
 
