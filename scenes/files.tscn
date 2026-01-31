@@ -113,29 +113,50 @@ offset_bottom = 1302.0
 scale = Vector2(0.4, 0.4)
 theme = ExtResource("3_tubit")
 
+[node name="LayerControll" type="Control" parent="Control" unique_id=714354237]
+anchors_preset = 0
+offset_top = 119.999985
+offset_right = 639.99994
+offset_bottom = 179.99998
+
 [node name="Button" type="Button" parent="Control" unique_id=46817522]
 z_index = 2
 z_as_relative = false
 layout_mode = 0
-offset_left = 242.5
-offset_top = 197.5
-offset_right = 272.5
-offset_bottom = 230.0
+offset_left = 439.99997
+offset_top = 130.0
+offset_right = 479.99997
+offset_bottom = 170.0
 theme = ExtResource("3_tubit")
 
 [node name="OptionButton" type="OptionButton" parent="Control" unique_id=650712653]
 z_index = 2
 z_as_relative = false
 layout_mode = 0
-offset_left = 25.0
-offset_top = 140.0
-offset_right = 121.0
-offset_bottom = 180.0
+offset_left = 490.0
+offset_top = 130.0
+offset_right = 632.20886
+offset_bottom = 170.0
 scale = Vector2(0.98446673, 0.991989)
-item_count = 3
+tooltip_text = "Blending Modes
+"
+toggle_mode = false
+item_count = 5
 popup/item_0/text = "Normal"
 popup/item_0/id = 1
 popup/item_1/text = "Darken"
 popup/item_1/id = 2
 popup/item_2/text = "Multiply"
 popup/item_2/id = 3
+popup/item_3/text = "lighten"
+popup/item_3/id = 4
+popup/item_4/text = "screen"
+popup/item_4/id = 5
+
+[node name="LayerList" type="Control" parent="Control" unique_id=619459836]
+anchors_preset = 0
+offset_left = -2.9563904e-05
+offset_top = 179.99998
+offset_right = 619.99994
+offset_bottom = 1599.9999
+theme = ExtResource("3_tubit")
