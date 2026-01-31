@@ -213,8 +213,10 @@ tile_set = SubResource("TileSet_jyhfs")
 
 [node name="Selection" parent="." unique_id=432554606 instance=ExtResource("3_sugp2")]
 z_index = -2
-offset_left = 2.0
-offset_right = 42.0
+offset_left = -311.0
+offset_top = 102.0
+offset_right = -271.0
+offset_bottom = 142.0
 
 [node name="TileMapLayer2" type="TileMapLayer" parent="." unique_id=598075439]
 tile_map_data = PackedByteArray("AAAKAAcAAAAEAAIAAAALAAcAAAAEAAIAAAAMAAcAAAAEAAIAAAANAAcAAAAEAAIAAAAOAAcAAAAEAAIAAAAPAAcAAAAEAAIAAAAQAAcAAAAEAAIAAAARAAwAAAAEAAIAAAASAAwAAAAEAAIAAAATAAwAAAAEAAIAAAAUAAwAAAAEAAIAAAAVAAwAAAAEAAIAAAAWAAwAAAAEAAIAAAAXAAwAAAAEAAIAAAAYAAwAAAAEAAIAAAA=")
@@ -223,3 +225,10 @@ tile_set = SubResource("TileSet_tbgi4")
 [node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1247115051]
 
 [node name="Selection controller" parent="." unique_id=1605957353 instance=ExtResource("5_tbgi4")]
+
+[node name="Label" type="Label" parent="." unique_id=141489094]
+offset_left = -368.0
+offset_top = 72.0
+offset_right = -211.0
+offset_bottom = 95.0
+text = "Game crashing cube"

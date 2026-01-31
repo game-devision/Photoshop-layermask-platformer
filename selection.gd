@@ -6,11 +6,14 @@ var camera
 var is_selecting = false
 var selection_start = Vector2()
 var selection_rect = Rect2()
+var maskmode
+@onready var area_2d: Area2D = $"pivot sprite/Area2D"
 @onready var nine_patch_rect: NinePatchRect = $"."
 @onready var collision_shape_2d: CollisionShape2D = $Area2D/CollisionShape2D
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	camera = get_tree().get_first_node_in_group("MainCam")
+	
 
 
 func _input(event):
@@ -18,6 +21,7 @@ func _input(event):
 		if event.button_index == MOUSE_BUTTON_LEFT:
 			if event.pressed:
 				return
+				
 			#	# Start selection
 			#	is_selecting = true
 			#	selection_start = get_global_mouse_position()
@@ -47,7 +51,7 @@ func _input(event):
 
 
 func _process(delta):
-	
+	area_2d.maskmode = maskmode
 	if is_selecting:
 		# Continuously update the selection rectangle to match the mouse position
 		var current_mouse_position = get_global_mouse_position()
