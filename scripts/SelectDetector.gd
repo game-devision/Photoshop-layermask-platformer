@@ -1,6 +1,6 @@
 extends Area2D
 
-
+var maskmode
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -19,7 +19,7 @@ func _on_body_entered(body: Node2D) -> void:
 	print("body entered")
 	if body == get_tree().get_first_node_in_group("Player"):
 		print("body is player")
-		get_tree().get_first_node_in_group("Player").switchLayers(2,2)
+		get_tree().get_first_node_in_group("Player").switchLayers(maskmode,maskmode)
 
 
 

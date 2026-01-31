@@ -7,6 +7,9 @@ var selection_start = Vector2()
 var selection_rect = Rect2()
 var ninepactrect = preload("uid://5b4f4hmpdyrc")
 var nine_patch_rect = ninepactrect.instantiate()
+# Changes mode for layer mask
+@export var maskmode = 2
+
 
 func _input(event):
 	if event is InputEventMouseButton:
@@ -15,6 +18,7 @@ func _input(event):
 				# Start selection
 				var nine_patch_rect = ninepactrect.instantiate()
 				add_child(nine_patch_rect)
+				nine_patch_rect.maskmode = maskmode
 				nine_patch_rect.is_selecting = true
 				nine_patch_rect.selection_start = get_global_mouse_position()
 				
