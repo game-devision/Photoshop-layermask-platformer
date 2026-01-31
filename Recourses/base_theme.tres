@@ -1,0 +1,26 @@
+[gd_resource type="Theme" format=3 uid="uid://d1tduyx1tprfw"]
+
+[ext_resource type="FontFile" uid="uid://cjvty1txjk2ro" path="res://Recourses/SourceSansPro-Regular.ttf" id="1_kilwu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nejwb"]
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.851769, 0.851769, 0.8517688, 1)
+border_blend = true
+
+[resource]
+default_font = ExtResource("1_kilwu")
+/constants/const = 0
+/font_sizes/size = 5
+/fonts/font = ExtResource("1_kilwu")
+/styles/stylebox = SubResource("StyleBoxFlat_nejwb")
+OptionButton/font_sizes/font_size = 15
+OptionButton/icons/arrow = null
+OptionButton/icons/icon = null
+Tree/font_sizes/font_size = 14
+Tree/styles/button_hover = null
+Tree/styles/button_pressed = null
+Tree/styles/cursor = null
+VScrollBar/styles/scroll = null
