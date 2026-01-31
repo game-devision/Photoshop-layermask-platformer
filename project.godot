@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Mask layers"
+config/name="tests"
 run/main_scene="uid://ciwgrtu2r4x5t"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
