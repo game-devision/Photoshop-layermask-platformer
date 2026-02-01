@@ -15,6 +15,10 @@ run/main_scene="uid://ciwgrtu2r4x5t"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GameStats="*uid://dnsiwetbngrvi"
+
 [global_group]
 
 MainCam=""
@@ -28,4 +32,5 @@ SelectController=""
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"

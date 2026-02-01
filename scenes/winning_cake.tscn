@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://c7p5boif1hb8n"]
+
+[ext_resource type="Texture2D" uid="uid://r2n2e50htvrp" path="res://sprites/the cake is a truth.png" id="1_8ricx"]
+[ext_resource type="Script" uid="uid://bnufs2lq3wao6" path="res://scripts/winning_cake.gd" id="1_a88am"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a88am"]
+size = Vector2(30, 22)
+
+[node name="Winning cake" type="Area2D" unique_id=300199127]
+script = ExtResource("1_a88am")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1094901695]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_a88am")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1398146807]
+texture = ExtResource("1_8ricx")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

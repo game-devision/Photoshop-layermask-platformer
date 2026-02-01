@@ -3,6 +3,7 @@
 [ext_resource type="TileSet" uid="uid://wm11h03suwnf" path="res://Recourses/collors_tiny.tres" id="1_tipki"]
 [ext_resource type="Texture2D" uid="uid://sx5cmk011aro" path="res://icon.svg" id="2_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://bdcywmn3tstvo" path="res://scenes/player_bundle.tscn" id="3_sugp2"]
+[ext_resource type="PackedScene" uid="uid://c7p5boif1hb8n" path="res://scenes/winning_cake.tscn" id="4_jyhfs"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sugp2"]
 texture = ExtResource("2_0wfyh")
@@ -213,3 +214,6 @@ tile_map_data = PackedByteArray("AAADAAwAAgACAAUAAAAGAAwAAgACAAUAAAAFAAwAAgACAAU
 tile_set = ExtResource("1_tipki")
 
 [node name="Player bundle" parent="." unique_id=1817304296 instance=ExtResource("3_sugp2")]
+
+[node name="Winning cake" parent="." unique_id=300199127 instance=ExtResource("4_jyhfs")]
+position = Vector2(96, 128)
