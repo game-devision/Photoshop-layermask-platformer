@@ -2,7 +2,8 @@
 
 [ext_resource type="TileSet" uid="uid://wm11h03suwnf" path="res://Recourses/collors_tiny.tres" id="1_kqbnj"]
 [ext_resource type="Texture2D" uid="uid://babfgyb0gcpgc" path="res://Recourses/collors.jpg" id="2_tubit"]
-[ext_resource type="Theme" uid="uid://d1tduyx1tprfw" path="res://Recourses/base_theme.tres" id="3_tubit"]
+[ext_resource type="StyleBox" uid="uid://buomcuxxejs36" path="res://Recourses/panel_style.tres" id="3_tubit"]
+[ext_resource type="FontFile" uid="uid://cjvty1txjk2ro" path="res://Recourses/SourceSansPro-Regular.ttf" id="4_8o624"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m6eyd"]
 texture = ExtResource("2_tubit")
@@ -73,6 +74,8 @@ curve_x = SubResource("Curve_wtebb")
 curve_y = SubResource("Curve_8r1eg")
 curve_z = SubResource("Curve_p3wi6")
 
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_8o624"]
+
 [node name="Node2D" type="Node2D" unique_id=1073008892]
 
 [node name="UI base" type="Node" parent="." unique_id=1381168139]
@@ -80,6 +83,7 @@ curve_z = SubResource("Curve_p3wi6")
 [node name="Tilemaps" type="Node" parent="UI base" unique_id=2037498252]
 
 [node name="TileMapMain" type="TileMapLayer" parent="UI base" unique_id=1881204560]
+z_index = -1
 z_as_relative = false
 position = Vector2(-6.1035156e-05, -3.0517578e-05)
 scale = Vector2(0.9999998, 0.9999998)
@@ -87,6 +91,7 @@ tile_map_data = PackedByteArray("AAC4/9f/AgAAAAAAAAC5/9f/AgAAAAAAAAC6/9f/AgAAAAA
 tile_set = ExtResource("1_kqbnj")
 
 [node name="TileMapBorders" type="TileMapLayer" parent="UI base" unique_id=1156540800]
+z_index = -1
 z_as_relative = false
 position = Vector2(-6.1035156e-05, -3.0517578e-05)
 scale = Vector2(0.9999998, 0.9999998)
@@ -102,32 +107,14 @@ texture = SubResource("CurveXYZTexture_f442p")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=299578651]
 
-[node name="Control" type="Control" parent="." unique_id=529740069]
-light_mask = 3
-z_index = 2
-layout_mode = 3
-offset_left = -576.0
-offset_top = -328.0
-offset_right = 2304.0
-offset_bottom = 1302.0
-scale = Vector2(0.4, 0.4)
-theme = ExtResource("3_tubit")
-
-[node name="LayerControll" type="Control" parent="Control" unique_id=714354237]
-anchors_preset = 0
-offset_top = 119.999985
-offset_right = 639.99994
-offset_bottom = 179.99998
-
-[node name="OptionButton" type="OptionButton" parent="Control/LayerControll" unique_id=650712653]
+[node name="OptionButton" type="OptionButton" parent="." unique_id=650712653]
 z_index = 2
 z_as_relative = false
-layout_mode = 0
-offset_left = 415.0
-offset_top = 10.0
-offset_right = 633.3922
-offset_bottom = 50.0
-scale = Vector2(0.98446673, 0.991989)
+offset_left = -421.0
+offset_top = -277.0
+offset_right = -325.0
+offset_bottom = -246.0
+scale = Vector2(0.76167554, 0.5826733)
 tooltip_text = "Blending Modes
 "
 toggle_mode = false
@@ -143,37 +130,67 @@ popup/item_3/id = 4
 popup/item_4/text = "screen"
 popup/item_4/id = 5
 
-[node name="CheckButton" type="CheckButton" parent="Control/LayerControll/OptionButton" unique_id=693178546]
-layout_mode = 0
-offset_left = -99.03838
-offset_top = -5.0403786
-offset_right = -55.038383
-offset_bottom = 18.959621
-scale = Vector2(2.126318, 2.126318)
+[node name="CheckButton" type="CheckButton" parent="." unique_id=693178546]
+z_index = 1
+offset_left = -473.0
+offset_top = -281.0
+offset_right = -429.0
+offset_bottom = -257.0
+scale = Vector2(1.0346376, 1.1056657)
 theme_override_constants/outline_size = 0
 
-[node name="LayerList" type="Control" parent="Control" unique_id=619459836]
-anchors_preset = 0
-offset_left = -2.9563904e-05
-offset_top = 179.99998
-offset_right = 619.99994
-offset_bottom = 1599.9999
-theme = ExtResource("3_tubit")
+[node name="layerPannel" type="VBoxContainer" parent="." unique_id=1157217719]
+anchors_preset = -1
+offset_left = -574.0
+offset_top = -255.0
+offset_right = -330.0
+offset_bottom = -205.0
+size_flags_vertical = 0
+theme_override_constants/separation = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Control/LayerList" unique_id=1215938263]
-layout_mode = 0
-offset_left = 2.4999998
-offset_top = 2.5
-offset_right = 42.309456
-offset_bottom = 69.50399
-scale = Vector2(15.448591, 21.118145)
+[node name="LayerBox" type="HBoxContainer" parent="layerPannel" unique_id=1348037889]
+custom_minimum_size = Vector2(0, 9)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 2
+theme_override_constants/separation = 1
 
-[node name="AspectRatioContainer" type="AspectRatioContainer" parent="Control/LayerList" unique_id=1743977645]
-layout_mode = 0
-offset_left = 2.5
-offset_top = 2.5
-offset_right = 617.49994
-offset_bottom = 1417.4999
-stretch_mode = 0
-alignment_horizontal = 0
-alignment_vertical = 0
+[node name="PanelContainer" type="PanelContainer" parent="layerPannel/LayerBox" unique_id=372599694]
+custom_minimum_size = Vector2(24.62, 50)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("3_tubit")
+
+[node name="LayerToggle" type="CheckBox" parent="layerPannel/LayerBox/PanelContainer" unique_id=546171378]
+layout_mode = 2
+theme_override_constants/h_separation = 0
+alignment = 1
+clip_text = true
+expand_icon = true
+
+[node name="PanelContainer2" type="PanelContainer" parent="layerPannel/LayerBox" unique_id=1835538723]
+custom_minimum_size = Vector2(219.245, 50)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("3_tubit")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="layerPannel/LayerBox/PanelContainer2" unique_id=73399915]
+custom_minimum_size = Vector2(220, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 8
+
+[node name="spacing" type="Control" parent="layerPannel/LayerBox/PanelContainer2/HBoxContainer" unique_id=786960848]
+layout_mode = 2
+
+[node name="LayerImg" type="TextureRect" parent="layerPannel/LayerBox/PanelContainer2/HBoxContainer" unique_id=895178770]
+custom_minimum_size = Vector2(35, 35)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("PlaceholderTexture2D_8o624")
+expand_mode = 1
+
+[node name="LayerLabel" type="Label" parent="layerPannel/LayerBox/PanelContainer2/HBoxContainer" unique_id=1129273083]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_8o624")
+theme_override_font_sizes/font_size = 14
+text = "sample text"
