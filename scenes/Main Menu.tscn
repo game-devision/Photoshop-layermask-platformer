@@ -2,6 +2,7 @@
 
 [ext_resource type="FontFile" uid="uid://cjvty1txjk2ro" path="res://Recourses/SourceSansPro-Regular.ttf" id="1_65kbn"]
 [ext_resource type="Script" uid="uid://csngxdbhk255c" path="res://scenes/main_menu.gd" id="1_qgd8p"]
+[ext_resource type="Script" uid="uid://d1sylr7rvqsui" path="res://scenes/Completed levels  text.gd" id="3_1i3ks"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_qgd8p"]
 font = ExtResource("1_65kbn")
@@ -366,6 +367,12 @@ offset_top = 26.849976
 offset_right = 450.0
 offset_bottom = 32.849976
 theme_override_styles/panel = SubResource("StyleBoxLine_15uo5")
+
+[node name="Label" type="Label" parent="." unique_id=10668752]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Completed: "
+script = ExtResource("3_1i3ks")
 
 [connection signal="button_down" from="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/Panel/Button" to="." method="_on_button_button_down"]
 [connection signal="button_down" from="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer/Panel/Button" to="." method="_on_button_button_down2"]

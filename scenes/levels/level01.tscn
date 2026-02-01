@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://bdcywmn3tstvo" path="res://scenes/player_bundle.tscn" id="1_3n7h2"]
 [ext_resource type="TileSet" uid="uid://wm11h03suwnf" path="res://Recourses/collors_tiny.tres" id="1_msin7"]
+[ext_resource type="PackedScene" uid="uid://c7p5boif1hb8n" path="res://scenes/winning_cake.tscn" id="3_g0jr5"]
 
 [node name="Node2D" type="Node2D" unique_id=545603510]
 
@@ -11,3 +12,6 @@ tile_map_data = PackedByteArray("AADj/xIAAgAAAAUAAADk/xIAAgAAAAUAAADl/xIAAgAAAAU
 tile_set = ExtResource("1_msin7")
 
 [node name="Player bundle" parent="." unique_id=1817304296 instance=ExtResource("1_3n7h2")]
+
+[node name="Winning cake" parent="." unique_id=300199127 instance=ExtResource("3_g0jr5")]
+position = Vector2(81, 269)
