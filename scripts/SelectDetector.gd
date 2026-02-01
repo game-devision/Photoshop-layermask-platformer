@@ -11,14 +11,13 @@ func _process(delta: float) -> void:
 	pass
 
 
-func _on_area_entered(area: Area2D) -> void:
-	print("Area entered")
+
 
 
 func _on_body_entered(body: Node2D) -> void:
-	print("body entered")
+	
 	if body == get_tree().get_first_node_in_group("Player"):
-		print("body is player")
+		
 		get_tree().get_first_node_in_group("Player").switchLayers(maskmode,maskmode)
 
 

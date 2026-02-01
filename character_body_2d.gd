@@ -25,7 +25,7 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 func switchLayers(mask, layer):
-	print("switched layers?")
+	print(mask,layer)
 	collision_mask = mask
 	collision_layer = layer
 	
