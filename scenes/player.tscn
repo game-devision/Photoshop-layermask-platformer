@@ -4,8 +4,20 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g2els"]
 
+[sub_resource type="Gradient" id="Gradient_3vyb7"]
+offsets = PackedFloat32Array(0, 0.023255814, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.3470598, 0.5892875, 0.74155456, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_g2els"]
+gradient = SubResource("Gradient_3vyb7")
+
 [node name="Player" type="CharacterBody2D" unique_id=549145980 groups=["Player"]]
 script = ExtResource("1_3vyb7")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1981793488 groups=["Player"]]
 shape = SubResource("RectangleShape2D_g2els")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2047149228]
+position = Vector2(-1.5497208e-06, -3.7252903e-08)
+scale = Vector2(0.078125, 20)
+texture = SubResource("GradientTexture1D_g2els")
