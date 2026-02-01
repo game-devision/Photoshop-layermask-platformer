@@ -10,12 +10,49 @@ border_width_bottom = 3
 border_color = Color(0.851769, 0.851769, 0.8517688, 1)
 border_blend = true
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kilwu"]
+content_margin_left = 6.0
+content_margin_top = 4.0
+content_margin_right = 6.0
+content_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kilwu"]
+bg_color = Color(0.46229059, 0.46229064, 0.4622904, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_udb8b"]
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+
 [resource]
 default_font = ExtResource("1_kilwu")
 /constants/const = 0
 /font_sizes/size = 5
 /fonts/font = ExtResource("1_kilwu")
 /styles/stylebox = SubResource("StyleBoxFlat_nejwb")
+CheckButton/colors/button_checked_color = Color(1, 1, 1, 1)
+CheckButton/colors/button_unchecked_color = Color(1, 1, 1, 1)
+CheckButton/colors/font_color = Color(0.875, 0.875, 0.875, 1)
+CheckButton/colors/font_disabled_color = Color(0.875, 0.875, 0.875, 0.5)
+CheckButton/colors/font_focus_color = Color(0.95, 0.95, 0.95, 1)
+CheckButton/colors/font_hover_color = Color(0.95, 0.95, 0.95, 1)
+CheckButton/colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+CheckButton/colors/font_outline_color = Color(0, 0, 0, 1)
+CheckButton/colors/font_pressed_color = Color(1, 1, 1, 1)
+CheckButton/constants/check_v_offset = 0
+CheckButton/constants/h_separation = 4
+CheckButton/constants/outline_size = 0
+CheckButton/font_sizes/font_size = 16
+CheckButton/styles/hover_pressed = SubResource("StyleBoxEmpty_kilwu")
+ItemList/styles/cursor_unfocused = SubResource("StyleBoxFlat_kilwu")
+ItemList/styles/panel = SubResource("StyleBoxFlat_udb8b")
 OptionButton/constants/arrow_margin = 4
 OptionButton/font_sizes/font_size = 15
 Tree/font_sizes/font_size = 14

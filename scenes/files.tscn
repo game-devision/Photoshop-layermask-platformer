@@ -119,24 +119,14 @@ offset_top = 119.999985
 offset_right = 639.99994
 offset_bottom = 179.99998
 
-[node name="Button" type="Button" parent="Control" unique_id=46817522]
+[node name="OptionButton" type="OptionButton" parent="Control/LayerControll" unique_id=650712653]
 z_index = 2
 z_as_relative = false
 layout_mode = 0
-offset_left = 439.99997
-offset_top = 130.0
-offset_right = 479.99997
-offset_bottom = 170.0
-theme = ExtResource("3_tubit")
-
-[node name="OptionButton" type="OptionButton" parent="Control" unique_id=650712653]
-z_index = 2
-z_as_relative = false
-layout_mode = 0
-offset_left = 490.0
-offset_top = 130.0
-offset_right = 632.20886
-offset_bottom = 170.0
+offset_left = 415.0
+offset_top = 10.0
+offset_right = 633.3922
+offset_bottom = 50.0
 scale = Vector2(0.98446673, 0.991989)
 tooltip_text = "Blending Modes
 "
@@ -153,6 +143,15 @@ popup/item_3/id = 4
 popup/item_4/text = "screen"
 popup/item_4/id = 5
 
+[node name="CheckButton" type="CheckButton" parent="Control/LayerControll/OptionButton" unique_id=693178546]
+layout_mode = 0
+offset_left = -99.03838
+offset_top = -5.0403786
+offset_right = -55.038383
+offset_bottom = 18.959621
+scale = Vector2(2.126318, 2.126318)
+theme_override_constants/outline_size = 0
+
 [node name="LayerList" type="Control" parent="Control" unique_id=619459836]
 anchors_preset = 0
 offset_left = -2.9563904e-05
@@ -160,3 +159,21 @@ offset_top = 179.99998
 offset_right = 619.99994
 offset_bottom = 1599.9999
 theme = ExtResource("3_tubit")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/LayerList" unique_id=1215938263]
+layout_mode = 0
+offset_left = 2.4999998
+offset_top = 2.5
+offset_right = 42.309456
+offset_bottom = 69.50399
+scale = Vector2(15.448591, 21.118145)
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="Control/LayerList" unique_id=1743977645]
+layout_mode = 0
+offset_left = 2.5
+offset_top = 2.5
+offset_right = 617.49994
+offset_bottom = 1417.4999
+stretch_mode = 0
+alignment_horizontal = 0
+alignment_vertical = 0
