@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dgwvjjcm5y81x"]
+
+[node name="Node2D" type="Node2D" unique_id=1624074709]
+
+[node name="Window" type="Window" parent="." unique_id=990812182]
+oversampling_override = 1.0
+initial_position = 1
+size = Vector2i(691, 650)
+
+[node name="PanelContainer" type="PanelContainer" parent="Window" unique_id=1093927083]
+offset_left = 2.0
+offset_top = 5.0
+offset_right = 686.0
+offset_bottom = 645.0
