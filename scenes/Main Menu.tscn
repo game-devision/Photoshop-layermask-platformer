@@ -6,14 +6,40 @@
 font = ExtResource("1_65kbn")
 font_size = 14
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_65kbn"]
+draw_center = false
+
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_65kbn"]
-size = Vector2(120, 120)
+size = Vector2(110, 110)
 
 [sub_resource type="LabelSettings" id="LabelSettings_1i3ks"]
 font = ExtResource("1_65kbn")
 font_size = 10
 
-[node name="Node2D" type="Node2D" unique_id=1624074709]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qgd8p"]
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1i3ks"]
+bg_color = Color(0.16587552, 0.6554088, 0.82222086, 0.5568628)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.3822, 0.8704033, 0.98, 0.80784315)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ism2r"]
+bg_color = Color(0.28773308, 0.6072776, 0.6245586, 0.4862745)
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_65kbn"]
+allow_unpress = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_estw7"]
+bg_color = Color(0.27752772, 0.27752775, 0.27752766, 1)
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_15uo5"]
+color = Color(0.6, 0.6, 0.6, 0.8)
+
+[node name="Node2D2" type="Node2D" unique_id=1624074709]
 
 [node name="Window" type="Window" parent="." unique_id=990812182]
 oversampling_override = 1.0
@@ -63,19 +89,17 @@ theme_override_constants/v_separation = 4
 columns = 4
 
 [node name="Panel" type="Panel" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer" unique_id=1367368116]
-custom_minimum_size = Vector2(139.575, 162.22)
+custom_minimum_size = Vector2(124, 142)
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_65kbn")
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/Panel" unique_id=1744763976]
 layout_mode = 0
 offset_left = 4.0
-offset_right = 132.0
-offset_bottom = 157.0
-size_flags_vertical = 0
-
-[node name="Button" type="Button" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/Panel/VBoxContainer2" unique_id=1534151790]
-layout_mode = 2
-size_flags_horizontal = 0
+offset_right = 122.0
+offset_bottom = 139.0
 size_flags_vertical = 0
 
 [node name="PanelContainer" type="PanelContainer" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/Panel/VBoxContainer2" unique_id=1647166695]
@@ -103,3 +127,53 @@ theme_override_constants/line_spacing = 3
 text = "sample text"
 label_settings = SubResource("LabelSettings_1i3ks")
 horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/Panel" unique_id=1534151790]
+layout_mode = 0
+offset_right = 124.0
+offset_bottom = 142.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/h_separation = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_qgd8p")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1i3ks")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ism2r")
+toggle_mode = true
+action_mode = 0
+button_group = SubResource("ButtonGroup_65kbn")
+
+[node name="Panel" type="Panel" parent="Window/PanelContainer" unique_id=287342894]
+custom_minimum_size = Vector2(0, 31.85)
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_styles/panel = SubResource("StyleBoxFlat_estw7")
+
+[node name="Label" type="Label" parent="Window/PanelContainer/Panel" unique_id=143746344]
+layout_mode = 0
+offset_left = 198.0
+offset_top = 6.8499756
+offset_right = 448.0
+offset_bottom = 29.849976
+theme_override_fonts/font = ExtResource("1_65kbn")
+theme_override_font_sizes/font_size = 15
+text = "sample text"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="Window/PanelContainer/Panel" unique_id=1754510890]
+layout_mode = 0
+offset_left = 452.0
+offset_top = 2.8499756
+offset_right = 540.0
+offset_bottom = 28.849976
+theme_override_fonts/font = ExtResource("1_65kbn")
+theme_override_font_sizes/font_size = 14
+text = "open"
+
+[node name="Panel" type="Panel" parent="Window/PanelContainer/Panel" unique_id=93890827]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 26.849976
+offset_right = 450.0
+offset_bottom = 32.849976
+theme_override_styles/panel = SubResource("StyleBoxLine_15uo5")
