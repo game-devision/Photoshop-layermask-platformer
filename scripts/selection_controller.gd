@@ -8,7 +8,7 @@ var selection_rect = Rect2()
 var ninepactrect = preload("uid://5b4f4hmpdyrc")
 var nine_patch_rect = ninepactrect.instantiate()
 # Changes mode for layer mask
-@export var maskmode = 2
+var maskmode = 1
 
 
 func _input(event):

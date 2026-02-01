@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://oytf5fulonmn"]
+
+[ext_resource type="Theme" uid="uid://d1tduyx1tprfw" path="res://Recourses/base_theme.tres" id="1_5p55f"]
+[ext_resource type="Script" uid="uid://by4725nefnixs" path="res://scenes/option_button.gd" id="2_r67kn"]
+
+[node name="Control" type="Control" unique_id=225091124]
+light_mask = 3
+z_index = 2
+layout_mode = 3
+anchors_preset = 0
+offset_left = -576.0
+offset_top = -328.0
+offset_right = 2304.0
+offset_bottom = 1302.0
+scale = Vector2(0.4, 0.4)
+theme = ExtResource("1_5p55f")
+
+[node name="LayerControll" type="Control" parent="." unique_id=345202239]
+anchors_preset = 0
+offset_top = 119.999985
+offset_right = 639.99994
+offset_bottom = 179.99998
+
+[node name="Button" type="Button" parent="." unique_id=1512047625]
+z_index = 2
+z_as_relative = false
+layout_mode = 0
+offset_left = 439.99997
+offset_top = 130.0
+offset_right = 479.99997
+offset_bottom = 170.0
+theme = ExtResource("1_5p55f")
+
+[node name="OptionButton" type="OptionButton" parent="." unique_id=1558903902]
+z_index = 2
+z_as_relative = false
+layout_mode = 0
+offset_left = 490.0
+offset_top = 130.0
+offset_right = 632.20886
+offset_bottom = 170.0
+scale = Vector2(0.98446673, 0.991989)
+tooltip_text = "Blending Modes
+"
+toggle_mode = false
+item_count = 5
+popup/item_0/text = "Normal"
+popup/item_0/id = 1
+popup/item_1/text = "Darken"
+popup/item_1/id = 2
+popup/item_2/text = "Multiply"
+popup/item_2/id = 3
+popup/item_3/text = "lighten"
+popup/item_3/id = 4
+popup/item_4/text = "screen"
+popup/item_4/id = 5
+script = ExtResource("2_r67kn")
+
+[node name="LayerList" type="Control" parent="." unique_id=804736442]
+anchors_preset = 0
+offset_left = -2.9563904e-05
+offset_top = 179.99998
+offset_right = 619.99994
+offset_bottom = 1599.9999
+theme = ExtResource("1_5p55f")
+
+[connection signal="item_focused" from="OptionButton" to="OptionButton" method="_on_item_focused"]
+[connection signal="item_selected" from="OptionButton" to="OptionButton" method="_on_item_selected"]
