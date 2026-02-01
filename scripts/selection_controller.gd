@@ -5,11 +5,21 @@ extends Node2D
 var is_selecting = false
 var selection_start = Vector2()
 var selection_rect = Rect2()
+var anticrashqueue = 0
 var ninepactrect = preload("uid://5b4f4hmpdyrc")
 var nine_patch_rect = ninepactrect.instantiate()
 # Changes mode for layer mask
 var maskmode = 1
+var allrects = []
 
+func _process(delta: float) -> void:
+	print(allrects.size())
+	if allrects.size() > 3:
+		allrects[0].queue_free()
+		allrects.remove_at(0)
+		
+		
+		
 
 func _input(event):
 	if event is InputEventMouseButton:
@@ -18,6 +28,7 @@ func _input(event):
 				# Start selection
 				var nine_patch_rect = ninepactrect.instantiate()
 				add_child(nine_patch_rect)
+				allrects.append(nine_patch_rect)
 				nine_patch_rect.maskmode = maskmode
 				nine_patch_rect.is_selecting = true
 				nine_patch_rect.selection_start = get_global_mouse_position()
