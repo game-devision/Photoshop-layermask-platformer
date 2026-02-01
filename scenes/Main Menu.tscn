@@ -1,12 +1,7 @@
 [gd_scene format=3 uid="uid://dgwvjjcm5y81x"]
 
 [ext_resource type="FontFile" uid="uid://cjvty1txjk2ro" path="res://Recourses/SourceSansPro-Regular.ttf" id="1_65kbn"]
-<<<<<<< HEAD
 [ext_resource type="Script" uid="uid://csngxdbhk255c" path="res://scenes/main_menu.gd" id="1_qgd8p"]
-=======
-[ext_resource type="ButtonGroup" uid="uid://v6tanvv63a5d" path="res://Recourses/new_button_group.tres" id="2_1i3ks"]
-[ext_resource type="Script" uid="uid://d2y5vwq488mtp" path="res://scenes/button_1.gd" id="3_1i3ks"]
->>>>>>> 901dd2f43551d654e635d9369557a42edce592a2
 
 [sub_resource type="LabelSettings" id="LabelSettings_qgd8p"]
 font = ExtResource("1_65kbn")
@@ -36,8 +31,14 @@ border_color = Color(0.3822, 0.8704033, 0.98, 0.80784315)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ism2r"]
 bg_color = Color(0.28773308, 0.6072776, 0.6245586, 0.4862745)
 
+[sub_resource type="ButtonGroup" id="ButtonGroup_65kbn"]
+allow_unpress = true
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_estw7"]
 bg_color = Color(0.27752772, 0.27752775, 0.27752766, 1)
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_15uo5"]
+color = Color(0.6, 0.6, 0.6, 0.8)
 
 [node name="Node2D2" type="Node2D" unique_id=1624074709]
 script = ExtResource("1_qgd8p")
@@ -129,7 +130,7 @@ text = "sample text"
 label_settings = SubResource("LabelSettings_1i3ks")
 horizontal_alignment = 1
 
-[node name="button1" type="Button" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/Panel" unique_id=1534151790]
+[node name="Button" type="Button" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/Panel" unique_id=1534151790]
 layout_mode = 0
 offset_top = -2.0
 offset_right = 124.0
@@ -328,116 +329,7 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_1i3ks")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ism2r")
 toggle_mode = true
 action_mode = 0
-button_group = ExtResource("2_1i3ks")
-script = ExtResource("3_1i3ks")
-
-[node name="Panel2" type="Panel" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer" unique_id=93851905]
-custom_minimum_size = Vector2(124, 142)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 0
-theme_override_styles/panel = SubResource("StyleBoxFlat_65kbn")
-
-[node name="VBoxContainer2" type="VBoxContainer" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/Panel2" unique_id=1493614143]
-layout_mode = 0
-offset_left = 4.0
-offset_right = 122.0
-offset_bottom = 139.0
-size_flags_vertical = 0
-
-[node name="PanelContainer" type="PanelContainer" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/Panel2/VBoxContainer2" unique_id=1666599118]
-custom_minimum_size = Vector2(100, 100)
-layout_mode = 2
-size_flags_vertical = 0
-
-[node name="MarginContainer" type="MarginContainer" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/Panel2/VBoxContainer2/PanelContainer" unique_id=157485593]
-layout_mode = 2
-theme_override_constants/margin_left = 4
-theme_override_constants/margin_top = 4
-theme_override_constants/margin_right = 4
-theme_override_constants/margin_bottom = 4
-
-[node name="TextureRect" type="TextureRect" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/Panel2/VBoxContainer2/PanelContainer/MarginContainer" unique_id=553133507]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-texture = SubResource("PlaceholderTexture2D_65kbn")
-
-[node name="Label" type="Label" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/Panel2/VBoxContainer2" unique_id=1127793589]
-layout_mode = 2
-size_flags_vertical = 1
-theme_override_constants/line_spacing = 3
-text = "sample text"
-label_settings = SubResource("LabelSettings_1i3ks")
-horizontal_alignment = 1
-
-[node name="Button2" type="Button" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/Panel2" unique_id=762485975]
-layout_mode = 0
-offset_right = 124.0
-offset_bottom = 142.0
-size_flags_horizontal = 0
-size_flags_vertical = 0
-theme_override_constants/h_separation = 0
-theme_override_styles/normal = SubResource("StyleBoxFlat_qgd8p")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_1i3ks")
-theme_override_styles/hover = SubResource("StyleBoxFlat_ism2r")
-toggle_mode = true
-action_mode = 0
-button_group = ExtResource("2_1i3ks")
-
-[node name="Panel3" type="Panel" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer" unique_id=2098695458]
-custom_minimum_size = Vector2(124, 142)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 0
-theme_override_styles/panel = SubResource("StyleBoxFlat_65kbn")
-
-[node name="VBoxContainer2" type="VBoxContainer" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/Panel3" unique_id=1400547463]
-layout_mode = 0
-offset_left = 4.0
-offset_right = 122.0
-offset_bottom = 139.0
-size_flags_vertical = 0
-
-[node name="PanelContainer" type="PanelContainer" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/Panel3/VBoxContainer2" unique_id=732409486]
-custom_minimum_size = Vector2(100, 100)
-layout_mode = 2
-size_flags_vertical = 0
-
-[node name="MarginContainer" type="MarginContainer" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/Panel3/VBoxContainer2/PanelContainer" unique_id=867479827]
-layout_mode = 2
-theme_override_constants/margin_left = 4
-theme_override_constants/margin_top = 4
-theme_override_constants/margin_right = 4
-theme_override_constants/margin_bottom = 4
-
-[node name="TextureRect" type="TextureRect" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/Panel3/VBoxContainer2/PanelContainer/MarginContainer" unique_id=379508849]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-texture = SubResource("PlaceholderTexture2D_65kbn")
-
-[node name="Label" type="Label" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/Panel3/VBoxContainer2" unique_id=649148185]
-layout_mode = 2
-size_flags_vertical = 1
-theme_override_constants/line_spacing = 3
-text = "sample text"
-label_settings = SubResource("LabelSettings_1i3ks")
-horizontal_alignment = 1
-
-[node name="Button3" type="Button" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/Panel3" unique_id=1840006180]
-layout_mode = 0
-offset_right = 124.0
-offset_bottom = 142.0
-size_flags_horizontal = 0
-size_flags_vertical = 0
-theme_override_constants/h_separation = 0
-theme_override_styles/normal = SubResource("StyleBoxFlat_qgd8p")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_1i3ks")
-theme_override_styles/hover = SubResource("StyleBoxFlat_ism2r")
-toggle_mode = true
-action_mode = 0
-button_group = ExtResource("2_1i3ks")
+button_group = SubResource("ButtonGroup_65kbn")
 
 [node name="Panel" type="Panel" parent="Window/PanelContainer" unique_id=287342894]
 custom_minimum_size = Vector2(0, 31.85)
@@ -445,7 +337,6 @@ layout_mode = 2
 size_flags_vertical = 8
 theme_override_styles/panel = SubResource("StyleBoxFlat_estw7")
 
-<<<<<<< HEAD
 [node name="Label" type="Label" parent="Window/PanelContainer/Panel" unique_id=143746344]
 layout_mode = 0
 offset_left = 198.0
@@ -480,6 +371,3 @@ theme_override_styles/panel = SubResource("StyleBoxLine_15uo5")
 [connection signal="button_down" from="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer/Panel/Button" to="." method="_on_button_button_down2"]
 [connection signal="button_down" from="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer/GridContainer/Panel/Button" to="." method="_on_button_button_down3"]
 [connection signal="button_down" from="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer/GridContainer/GridContainer/Panel/Button" to="." method="_on_button_button_down4"]
-=======
-[connection signal="toggled" from="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/Panel/button1" to="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/Panel/button1" method="_on_toggled"]
->>>>>>> 901dd2f43551d654e635d9369557a42edce592a2
