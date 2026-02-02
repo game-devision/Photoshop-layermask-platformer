@@ -70,60 +70,51 @@ layout_mode = 2
 theme_override_constants/separation = 40
 
 [node name="BoxContainer" type="BoxContainer" parent="Window/PanelContainer/VBoxContainer" unique_id=1960160661]
-visible = false
 layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
 theme_override_constants/separation = 6
 
-[node name="MarginContainer" type="MarginContainer" parent="Window/PanelContainer/VBoxContainer" unique_id=2059226546]
-layout_mode = 2
-theme_override_constants/margin_left = 6
-theme_override_constants/margin_top = 4
-theme_override_constants/margin_right = 6
-theme_override_constants/margin_bottom = 4
-
-[node name="GridContainer" type="GridContainer" parent="Window/PanelContainer/VBoxContainer/MarginContainer" unique_id=1630136581]
+[node name="GridContainer" type="GridContainer" parent="Window/PanelContainer/VBoxContainer/BoxContainer" unique_id=1630136581]
 clip_contents = true
 layout_mode = 2
 size_flags_horizontal = 4
-size_flags_vertical = 0
 theme_override_constants/v_separation = 4
 columns = 4
 
-[node name="Panel" type="Panel" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer" unique_id=1367368116]
+[node name="Panel2" type="Panel" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer" unique_id=2082318811]
 custom_minimum_size = Vector2(124, 142)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
 theme_override_styles/panel = SubResource("StyleBoxFlat_65kbn")
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/Panel" unique_id=1744763976]
+[node name="VBoxContainer2" type="VBoxContainer" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2" unique_id=2132855600]
 layout_mode = 0
 offset_left = 4.0
 offset_right = 122.0
 offset_bottom = 139.0
 size_flags_vertical = 0
 
-[node name="PanelContainer" type="PanelContainer" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/Panel/VBoxContainer2" unique_id=1647166695]
+[node name="PanelContainer" type="PanelContainer" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/VBoxContainer2" unique_id=293739247]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 size_flags_vertical = 0
 
-[node name="MarginContainer" type="MarginContainer" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/Panel/VBoxContainer2/PanelContainer" unique_id=267897642]
+[node name="MarginContainer" type="MarginContainer" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/VBoxContainer2/PanelContainer" unique_id=961466507]
 layout_mode = 2
 theme_override_constants/margin_left = 4
 theme_override_constants/margin_top = 4
 theme_override_constants/margin_right = 4
 theme_override_constants/margin_bottom = 4
 
-[node name="TextureRect" type="TextureRect" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/Panel/VBoxContainer2/PanelContainer/MarginContainer" unique_id=1732946794]
+[node name="TextureRect" type="TextureRect" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/VBoxContainer2/PanelContainer/MarginContainer" unique_id=367016340]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture = SubResource("PlaceholderTexture2D_65kbn")
 
-[node name="Label" type="Label" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/Panel/VBoxContainer2" unique_id=1020949696]
+[node name="Label" type="Label" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/VBoxContainer2" unique_id=2038950332]
 layout_mode = 2
 size_flags_vertical = 1
 theme_override_constants/line_spacing = 3
@@ -131,7 +122,61 @@ text = "sample text"
 label_settings = SubResource("LabelSettings_1i3ks")
 horizontal_alignment = 1
 
-[node name="Button" type="Button" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/Panel" unique_id=1534151790]
+[node name="Button" type="Button" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2" unique_id=1658970947]
+layout_mode = 0
+offset_right = 124.0
+offset_bottom = 142.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/h_separation = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_qgd8p")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1i3ks")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ism2r")
+toggle_mode = true
+action_mode = 0
+button_group = SubResource("ButtonGroup_65kbn")
+
+[node name="Panel" type="Panel" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer" unique_id=1367368116]
+custom_minimum_size = Vector2(124, 142)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_65kbn")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel" unique_id=1744763976]
+layout_mode = 0
+offset_left = 4.0
+offset_right = 122.0
+offset_bottom = 139.0
+size_flags_vertical = 0
+
+[node name="PanelContainer" type="PanelContainer" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel/VBoxContainer2" unique_id=1647166695]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel/VBoxContainer2/PanelContainer" unique_id=267897642]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="TextureRect" type="TextureRect" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel/VBoxContainer2/PanelContainer/MarginContainer" unique_id=1732946794]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("PlaceholderTexture2D_65kbn")
+
+[node name="Label" type="Label" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel/VBoxContainer2" unique_id=1020949696]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_constants/line_spacing = 3
+text = "sample text"
+label_settings = SubResource("LabelSettings_1i3ks")
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel" unique_id=1534151790]
 layout_mode = 0
 offset_top = -2.0
 offset_right = 124.0
@@ -146,47 +191,39 @@ toggle_mode = true
 action_mode = 0
 button_group = SubResource("ButtonGroup_65kbn")
 
-[node name="GridContainer" type="GridContainer" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer" unique_id=1166711935]
-clip_contents = true
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 0
-theme_override_constants/v_separation = 4
-columns = 4
-
-[node name="Panel" type="Panel" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer" unique_id=2082318811]
+[node name="Panel3" type="Panel" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer" unique_id=1609452171]
 custom_minimum_size = Vector2(124, 142)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
 theme_override_styles/panel = SubResource("StyleBoxFlat_65kbn")
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer/Panel" unique_id=2132855600]
+[node name="VBoxContainer2" type="VBoxContainer" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel3" unique_id=737306171]
 layout_mode = 0
 offset_left = 4.0
 offset_right = 122.0
 offset_bottom = 139.0
 size_flags_vertical = 0
 
-[node name="PanelContainer" type="PanelContainer" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer/Panel/VBoxContainer2" unique_id=293739247]
+[node name="PanelContainer" type="PanelContainer" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel3/VBoxContainer2" unique_id=893466396]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 size_flags_vertical = 0
 
-[node name="MarginContainer" type="MarginContainer" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer/Panel/VBoxContainer2/PanelContainer" unique_id=961466507]
+[node name="MarginContainer" type="MarginContainer" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel3/VBoxContainer2/PanelContainer" unique_id=1701676912]
 layout_mode = 2
 theme_override_constants/margin_left = 4
 theme_override_constants/margin_top = 4
 theme_override_constants/margin_right = 4
 theme_override_constants/margin_bottom = 4
 
-[node name="TextureRect" type="TextureRect" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer/Panel/VBoxContainer2/PanelContainer/MarginContainer" unique_id=367016340]
+[node name="TextureRect" type="TextureRect" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel3/VBoxContainer2/PanelContainer/MarginContainer" unique_id=2046461206]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture = SubResource("PlaceholderTexture2D_65kbn")
 
-[node name="Label" type="Label" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer/Panel/VBoxContainer2" unique_id=2038950332]
+[node name="Label" type="Label" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel3/VBoxContainer2" unique_id=1471358983]
 layout_mode = 2
 size_flags_vertical = 1
 theme_override_constants/line_spacing = 3
@@ -194,7 +231,7 @@ text = "sample text"
 label_settings = SubResource("LabelSettings_1i3ks")
 horizontal_alignment = 1
 
-[node name="Button" type="Button" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer/Panel" unique_id=1658970947]
+[node name="Button" type="Button" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel3" unique_id=805023161]
 layout_mode = 0
 offset_right = 124.0
 offset_bottom = 142.0
@@ -208,47 +245,39 @@ toggle_mode = true
 action_mode = 0
 button_group = SubResource("ButtonGroup_65kbn")
 
-[node name="GridContainer" type="GridContainer" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer" unique_id=793903080]
-clip_contents = true
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 0
-theme_override_constants/v_separation = 4
-columns = 4
-
-[node name="Panel" type="Panel" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer/GridContainer" unique_id=1609452171]
+[node name="Panel4" type="Panel" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer" unique_id=313982197]
 custom_minimum_size = Vector2(124, 142)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 0
 theme_override_styles/panel = SubResource("StyleBoxFlat_65kbn")
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer/GridContainer/Panel" unique_id=737306171]
+[node name="VBoxContainer2" type="VBoxContainer" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel4" unique_id=2090996703]
 layout_mode = 0
 offset_left = 4.0
 offset_right = 122.0
 offset_bottom = 139.0
 size_flags_vertical = 0
 
-[node name="PanelContainer" type="PanelContainer" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer/GridContainer/Panel/VBoxContainer2" unique_id=893466396]
+[node name="PanelContainer" type="PanelContainer" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel4/VBoxContainer2" unique_id=1383750636]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 size_flags_vertical = 0
 
-[node name="MarginContainer" type="MarginContainer" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer/GridContainer/Panel/VBoxContainer2/PanelContainer" unique_id=1701676912]
+[node name="MarginContainer" type="MarginContainer" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel4/VBoxContainer2/PanelContainer" unique_id=619650834]
 layout_mode = 2
 theme_override_constants/margin_left = 4
 theme_override_constants/margin_top = 4
 theme_override_constants/margin_right = 4
 theme_override_constants/margin_bottom = 4
 
-[node name="TextureRect" type="TextureRect" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer/GridContainer/Panel/VBoxContainer2/PanelContainer/MarginContainer" unique_id=2046461206]
+[node name="TextureRect" type="TextureRect" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel4/VBoxContainer2/PanelContainer/MarginContainer" unique_id=1223073237]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture = SubResource("PlaceholderTexture2D_65kbn")
 
-[node name="Label" type="Label" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer/GridContainer/Panel/VBoxContainer2" unique_id=1471358983]
+[node name="Label" type="Label" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel4/VBoxContainer2" unique_id=85873117]
 layout_mode = 2
 size_flags_vertical = 1
 theme_override_constants/line_spacing = 3
@@ -256,69 +285,7 @@ text = "sample text"
 label_settings = SubResource("LabelSettings_1i3ks")
 horizontal_alignment = 1
 
-[node name="Button" type="Button" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer/GridContainer/Panel" unique_id=805023161]
-layout_mode = 0
-offset_right = 124.0
-offset_bottom = 142.0
-size_flags_horizontal = 0
-size_flags_vertical = 0
-theme_override_constants/h_separation = 0
-theme_override_styles/normal = SubResource("StyleBoxFlat_qgd8p")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_1i3ks")
-theme_override_styles/hover = SubResource("StyleBoxFlat_ism2r")
-toggle_mode = true
-action_mode = 0
-button_group = SubResource("ButtonGroup_65kbn")
-
-[node name="GridContainer" type="GridContainer" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer/GridContainer" unique_id=1186535972]
-clip_contents = true
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 0
-theme_override_constants/v_separation = 4
-columns = 4
-
-[node name="Panel" type="Panel" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer/GridContainer/GridContainer" unique_id=313982197]
-custom_minimum_size = Vector2(124, 142)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 0
-theme_override_styles/panel = SubResource("StyleBoxFlat_65kbn")
-
-[node name="VBoxContainer2" type="VBoxContainer" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer/GridContainer/GridContainer/Panel" unique_id=2090996703]
-layout_mode = 0
-offset_left = 4.0
-offset_right = 122.0
-offset_bottom = 139.0
-size_flags_vertical = 0
-
-[node name="PanelContainer" type="PanelContainer" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer/GridContainer/GridContainer/Panel/VBoxContainer2" unique_id=1383750636]
-custom_minimum_size = Vector2(100, 100)
-layout_mode = 2
-size_flags_vertical = 0
-
-[node name="MarginContainer" type="MarginContainer" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer/GridContainer/GridContainer/Panel/VBoxContainer2/PanelContainer" unique_id=619650834]
-layout_mode = 2
-theme_override_constants/margin_left = 4
-theme_override_constants/margin_top = 4
-theme_override_constants/margin_right = 4
-theme_override_constants/margin_bottom = 4
-
-[node name="TextureRect" type="TextureRect" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer/GridContainer/GridContainer/Panel/VBoxContainer2/PanelContainer/MarginContainer" unique_id=1223073237]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-texture = SubResource("PlaceholderTexture2D_65kbn")
-
-[node name="Label" type="Label" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer/GridContainer/GridContainer/Panel/VBoxContainer2" unique_id=85873117]
-layout_mode = 2
-size_flags_vertical = 1
-theme_override_constants/line_spacing = 3
-text = "sample text"
-label_settings = SubResource("LabelSettings_1i3ks")
-horizontal_alignment = 1
-
-[node name="Button" type="Button" parent="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer/GridContainer/GridContainer/Panel" unique_id=1230671035]
+[node name="Button" type="Button" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel4" unique_id=1230671035]
 layout_mode = 0
 offset_right = 124.0
 offset_bottom = 142.0
@@ -374,7 +341,7 @@ offset_bottom = 23.0
 text = "Completed: "
 script = ExtResource("3_1i3ks")
 
-[connection signal="button_down" from="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/Panel/Button" to="." method="_on_button_button_down"]
-[connection signal="button_down" from="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer/Panel/Button" to="." method="_on_button_button_down2"]
-[connection signal="button_down" from="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer/GridContainer/Panel/Button" to="." method="_on_button_button_down3"]
-[connection signal="button_down" from="Window/PanelContainer/VBoxContainer/MarginContainer/GridContainer/GridContainer/GridContainer/GridContainer/Panel/Button" to="." method="_on_button_button_down4"]
+[connection signal="button_down" from="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Button" to="." method="_on_button_button_down2"]
+[connection signal="button_down" from="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel/Button" to="." method="_on_button_button_down"]
+[connection signal="button_down" from="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel3/Button" to="." method="_on_button_button_down3"]
+[connection signal="button_down" from="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel4/Button" to="." method="_on_button_button_down4"]
