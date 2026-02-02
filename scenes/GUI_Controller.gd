@@ -12,7 +12,7 @@ extends Node2D
 var toggled_button
 
 
-var avaliable_layers = 3
+@export var avaliable_layers = 3
 
 # Called when the node enters the scene tree for the first time.
 

@@ -136,6 +136,238 @@ toggle_mode = true
 action_mode = 0
 button_group = SubResource("ButtonGroup_65kbn")
 
+[node name="Panel2" type="Panel" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2" unique_id=796283930]
+custom_minimum_size = Vector2(124, 142)
+layout_mode = 0
+offset_left = -3.0
+offset_top = 152.0
+offset_right = 121.0
+offset_bottom = 294.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_65kbn")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2" unique_id=588849429]
+layout_mode = 0
+offset_left = 4.0
+offset_right = 122.0
+offset_bottom = 139.0
+size_flags_vertical = 0
+
+[node name="PanelContainer" type="PanelContainer" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2/VBoxContainer2" unique_id=1528546889]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2/VBoxContainer2/PanelContainer" unique_id=1295289819]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="TextureRect" type="TextureRect" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2/VBoxContainer2/PanelContainer/MarginContainer" unique_id=1638407428]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("PlaceholderTexture2D_65kbn")
+
+[node name="Label" type="Label" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2/VBoxContainer2" unique_id=518637407]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_constants/line_spacing = 3
+text = "sample text"
+label_settings = SubResource("LabelSettings_1i3ks")
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2" unique_id=1957497449]
+layout_mode = 0
+offset_right = 124.0
+offset_bottom = 142.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/h_separation = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_qgd8p")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1i3ks")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ism2r")
+toggle_mode = true
+action_mode = 0
+button_group = SubResource("ButtonGroup_65kbn")
+
+[node name="Panel2" type="Panel" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2" unique_id=1718133451]
+custom_minimum_size = Vector2(124, 142)
+layout_mode = 0
+offset_left = 134.0
+offset_top = 2.0
+offset_right = 258.0
+offset_bottom = 144.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_65kbn")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2/Panel2" unique_id=1795055817]
+layout_mode = 0
+offset_left = 4.0
+offset_right = 122.0
+offset_bottom = 139.0
+size_flags_vertical = 0
+
+[node name="PanelContainer" type="PanelContainer" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2/Panel2/VBoxContainer2" unique_id=402330016]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2/Panel2/VBoxContainer2/PanelContainer" unique_id=409168153]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="TextureRect" type="TextureRect" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2/Panel2/VBoxContainer2/PanelContainer/MarginContainer" unique_id=930423019]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("PlaceholderTexture2D_65kbn")
+
+[node name="Label" type="Label" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2/Panel2/VBoxContainer2" unique_id=1468278553]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_constants/line_spacing = 3
+text = "sample text"
+label_settings = SubResource("LabelSettings_1i3ks")
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2/Panel2" unique_id=674800739]
+layout_mode = 0
+offset_right = 124.0
+offset_bottom = 142.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/h_separation = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_qgd8p")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1i3ks")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ism2r")
+toggle_mode = true
+action_mode = 0
+button_group = SubResource("ButtonGroup_65kbn")
+
+[node name="Panel2" type="Panel" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2/Panel2" unique_id=227002154]
+custom_minimum_size = Vector2(124, 142)
+layout_mode = 0
+offset_left = 134.0
+offset_top = 2.0
+offset_right = 258.0
+offset_bottom = 144.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_65kbn")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2/Panel2/Panel2" unique_id=1909547345]
+layout_mode = 0
+offset_left = 4.0
+offset_right = 122.0
+offset_bottom = 139.0
+size_flags_vertical = 0
+
+[node name="PanelContainer" type="PanelContainer" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2/Panel2/Panel2/VBoxContainer2" unique_id=44447291]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2/Panel2/Panel2/VBoxContainer2/PanelContainer" unique_id=441316374]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="TextureRect" type="TextureRect" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2/Panel2/Panel2/VBoxContainer2/PanelContainer/MarginContainer" unique_id=576562236]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("PlaceholderTexture2D_65kbn")
+
+[node name="Label" type="Label" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2/Panel2/Panel2/VBoxContainer2" unique_id=1633600457]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_constants/line_spacing = 3
+text = "sample text"
+label_settings = SubResource("LabelSettings_1i3ks")
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2/Panel2/Panel2" unique_id=603863841]
+layout_mode = 0
+offset_right = 124.0
+offset_bottom = 142.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/h_separation = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_qgd8p")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1i3ks")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ism2r")
+toggle_mode = true
+action_mode = 0
+button_group = SubResource("ButtonGroup_65kbn")
+
+[node name="Panel2" type="Panel" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2/Panel2/Panel2" unique_id=845906436]
+custom_minimum_size = Vector2(124, 142)
+layout_mode = 0
+offset_left = 134.0
+offset_top = 2.0
+offset_right = 258.0
+offset_bottom = 144.0
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_65kbn")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2/Panel2/Panel2/Panel2" unique_id=1899577375]
+layout_mode = 0
+offset_left = 4.0
+offset_right = 122.0
+offset_bottom = 139.0
+size_flags_vertical = 0
+
+[node name="PanelContainer" type="PanelContainer" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2/Panel2/Panel2/Panel2/VBoxContainer2" unique_id=507003425]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2/Panel2/Panel2/Panel2/VBoxContainer2/PanelContainer" unique_id=1509750365]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="TextureRect" type="TextureRect" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2/Panel2/Panel2/Panel2/VBoxContainer2/PanelContainer/MarginContainer" unique_id=430306284]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("PlaceholderTexture2D_65kbn")
+
+[node name="Label" type="Label" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2/Panel2/Panel2/Panel2/VBoxContainer2" unique_id=603117713]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_constants/line_spacing = 3
+text = "sample text"
+label_settings = SubResource("LabelSettings_1i3ks")
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2/Panel2/Panel2/Panel2" unique_id=1874146011]
+layout_mode = 0
+offset_right = 124.0
+offset_bottom = 142.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_constants/h_separation = 0
+theme_override_styles/normal = SubResource("StyleBoxFlat_qgd8p")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1i3ks")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ism2r")
+toggle_mode = true
+action_mode = 0
+button_group = SubResource("ButtonGroup_65kbn")
+
 [node name="Panel" type="Panel" parent="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer" unique_id=1367368116]
 custom_minimum_size = Vector2(124, 142)
 layout_mode = 2
@@ -342,6 +574,10 @@ text = "Completed: "
 script = ExtResource("3_1i3ks")
 
 [connection signal="button_down" from="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Button" to="." method="_on_button_button_down2"]
+[connection signal="button_down" from="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2/Button" to="." method="_on_button_button_down5"]
+[connection signal="button_down" from="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2/Panel2/Button" to="." method="_on_button_button_down6"]
+[connection signal="button_down" from="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2/Panel2/Panel2/Button" to="." method="_on_button_button_down7"]
+[connection signal="button_down" from="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel2/Panel2/Panel2/Panel2/Panel2/Button" to="." method="_on_button_button_down8"]
 [connection signal="button_down" from="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel/Button" to="." method="_on_button_button_down"]
 [connection signal="button_down" from="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel3/Button" to="." method="_on_button_button_down3"]
 [connection signal="button_down" from="Window/PanelContainer/VBoxContainer/BoxContainer/GridContainer/Panel4/Button" to="." method="_on_button_button_down4"]
